@@ -1,0 +1,17 @@
+{
+  "name": "seed-couchdb-design",
+  "version": "0.0.0",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "description": "Seed CouchDB's design documents with nano",
+  "devDependencies": {
+    "nano": "~4.2.1"
+  },
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "object-filter": "~1.0.1",
+    "object-keys-map": "~1.0.1",
+    "object-map": "0.0.0",
+    "object-map-to-array": "~1.0.0",
+    "object-some": "~1.0.0"
+  }
+}
