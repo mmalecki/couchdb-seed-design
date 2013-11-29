@@ -60,7 +60,7 @@ module.exports = function (db, design, cb) {
 
   var local = objmap(objkeysmap(design, addDesign), normalizeDoc);
 
-  db.fetch(Object.keys(local), function (err, docs) {
+  db.fetch({ keys: Object.keys(local) }, function (err, docs) {
     var diff;
     var remote = {};
     var update;
