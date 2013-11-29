@@ -70,7 +70,9 @@ module.exports = function (db, design, cb) {
     }
 
     docs.rows.forEach(function (doc) {
-      remote[doc.key] = normalizeDoc(doc.doc);
+      if (doc.doc) {
+        remote[doc.key] = normalizeDoc(doc.doc);
+      }
     });
 
     update = objmaptoarr(objfilter(local, function (value, key) {
