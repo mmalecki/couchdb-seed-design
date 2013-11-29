@@ -7,7 +7,6 @@
     "nano": "~4.2.1"
   },
   "dependencies": {
-    "underscore": "~1.5.2",
     "object-filter": "~1.0.1",
     "object-keys-map": "~1.0.1",
     "object-map": "0.0.0",
