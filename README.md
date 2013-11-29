@@ -1,5 +1,5 @@
 # couchdb-seed-design
-Seed CouchDB's design documents with [`nano`](https://github.com/dscape/nano).
+Seed CouchDB design documents with [`nano`](https://github.com/dscape/nano).
 
 ## Installation
 
