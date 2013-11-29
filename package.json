@@ -1,6 +1,6 @@
 {
   "name": "seed-couchdb-design",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Maciej Małecki <me@mmalecki.com>",
   "description": "Seed CouchDB's design documents with nano",
   "devDependencies": {
