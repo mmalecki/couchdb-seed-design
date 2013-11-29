@@ -13,5 +13,6 @@
     "object-map": "0.0.0",
     "object-map-to-array": "~1.0.0",
     "object-some": "~1.0.0"
-  }
+  },
+  "license": "MIT"
 }
