@@ -7,6 +7,10 @@
   "devDependencies": {
     "nano": "~4.2.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmalecki/couchdb-seed-design.git"
+  },
   "dependencies": {
     "object-filter": "~1.0.1",
     "object-keys-map": "~1.0.1",
