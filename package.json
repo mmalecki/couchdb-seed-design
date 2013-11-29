@@ -1,5 +1,5 @@
 {
-  "name": "seed-couchdb-design",
+  "name": "couchdb-seed-design",
   "version": "0.0.1",
   "author": "Maciej Małecki <me@mmalecki.com>",
   "keywords": ["couchdb", "design document", "nano", "view"],
