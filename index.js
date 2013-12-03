@@ -12,8 +12,19 @@ function normalizeDoc(doc, id) {
   return {
     _id: id || doc._id,
     _rev: doc._rev,
-    views: (doc.views && objmap(doc.views, normalizeView)) || {}
+    views: (doc.views && objmap(doc.views, normalizeView)) || {},
+    updates: (doc.updates && objmap(doc.updates, normalizeUpdate)) || {}
   };
+}
+
+function normalizeUpdate(update) {
+  return update.toString();
+}
+
+function updatesEqual(a, b) {
+  return !objsome(a, function (v, k) {
+    return v !== b[k];
+  });
 }
 
 function normalizeView(view) {
@@ -50,7 +61,8 @@ function docEqual(local, remote) {
     return false;
   }
 
-  return viewsEqual(local.views, remote.views);
+  return viewsEqual(local.views, remote.views) &&
+         updatesEqual(local.updates, remote.updates);
 }
 
 module.exports = function (db, design, cb) {

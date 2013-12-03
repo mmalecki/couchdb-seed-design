@@ -14,6 +14,12 @@ seed(db, {
       byFullName: function (doc) {
         emit(doc.firstName + ' ' + doc.lastName);
       }
+    },
+    updates: {
+      firstName: function (doc, req) {
+        doc.firstName = req.body;
+        return [doc, 'ok'];
+      }
     }
   }
 }, function () {
